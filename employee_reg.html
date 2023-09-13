@@ -108,6 +108,7 @@
                 <label for="office">Office:</label>
                 <input type="text" id="office" required>
             </div>
+
             <script>
                 document.getElementById("registration-form").addEventListener("submit", function(event) {
                 event.preventDefault(); // Prevent the form from actually submitting
@@ -120,7 +121,8 @@
                 }
                 });
             </script>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
+
         </form>
     </div>
 </body>
