@@ -71,17 +71,10 @@
 <body>
     <div class="container">
         <h1>Employee Registration</h1>
-        <form action="#" method="post" id="registration-form">
+        <form class="form" action="#" method="post" id="registration-form">
             <div class="form-group">
                 <label for="last_name">Last Name:</label>
                 <input type="text" id="last_name" required>
-<<<<<<< HEAD
-                <script>
-                    var originalvalue = document.getElementById("last_name").value;
-                    console.log(originalvalue);
-                 </script>
-=======
->>>>>>> a01e15f8d7b9e93a3857d837213e76307c22378c
             </div>
             <div class="form-group">
                 <label for="first_name">First Name:</label>
@@ -109,17 +102,30 @@
                 <input type="text" id="office" required>
             </div>
             <script>
-                document.getElementById("registration-form").addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent the form from actually submitting
-                // Access and display form data
-                var form = event.target;
-                var formData = new FormData(form);
-                // Iterate through form data and log it (fordebugging)
-                for (var pair of formData.entries()) {
-                console.log(pair[0] + ": " + pair[1]);
-                }
+               document.getElementById("registration-form").addEventListener("submit", function(a) 
+                {
+                    a.preventDefault(); 
+                    // Prevent the formfrom actually submitting
+                    // Access and display form data
+                    var form = a.target;
+                    var formData = new FormData(form);
+                    // Iterate through form data and log it (for debugging)
+                    for (var pair of formData.entries()) {
+                    console.log(pair[0] + ": " + pair[1]);
+                    }
                 });
-            </script>
+
+                // var nameInput = document.getElementById('registration-form');
+
+                // document.querySelector('form.form').addEventListener('submit', function (e) {
+
+                //  //prevent the normal submission of the form
+                // e.preventDefault();
+
+                // console.log(nameInput.value);    
+                // });
+
+             </script>
             <button type="submit">Submit</button>
            
                 
