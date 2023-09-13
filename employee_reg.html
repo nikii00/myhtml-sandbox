@@ -107,19 +107,17 @@
                 
         </form>
         <script>
-            document.getElementById("registration-form").addEventListener("submit", function(event) 
-             {
-                 event.preventDefault(); 
-                 // Prevent the formfrom actually submitting
-                 // Access and display form data
-                 var form = event.target;
-                 var formData = new FormData(form);
-                 // Iterate through form data and log it (for debugging)
-                 for (var pair of formData.entries()) {
-                 console.log(pair[0] + ": " + pair[1]);
-                 }
-             });
-          </script>
+            document.getElementById("registration-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+            // Access and display form data
+            var form = event.target;
+            var formData = new FormData(form);
+            // Iterate through form data and log it (for debugging)
+            for (var pair of formData.entries()) {
+            console.log(pair[0] + ": " + pair[1]);
+            }
+            });
+            </script>
     </div>
 </body>
 </html>
